@@ -43,7 +43,7 @@ var lastName = "Lovelace";
 
 // Create a variable, fullName, and assign it a value of the combination of firstName and lastName with a space.
 
-var fullName = firstName, lastName;
+var fullName = firstName + " " + lastName;
 
 // Create a variable, profession, and assign it a value of a string, "Computer Programmer".
 

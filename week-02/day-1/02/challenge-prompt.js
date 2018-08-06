@@ -211,7 +211,7 @@ var characterTwoSavings = characterTwoYearlyRent + characterTwoYealyExpenses;
    // console.log of a string of what ?
 
 
-    if (characterOneProfession === "web developer", characterTwoProfession === "Accountant") {
+    if ((characterOneProfession === "web developer") && (characterTwoProfession === "Accountant")) {
         console.log("Look at Web Developer and a Accountant");
     }
 

@@ -16,4 +16,20 @@
 
 
 
-var welcomePrompt = prompt;
+var welcomePrompt = prompt ("Welcome to the sandwich shop, what do i call you ");
+var hello = "hello " ;
+
+alert (hello + welcomePrompt)
+
+var confirmation = confirm ("are you here for a sandwich");
+
+if (confirmatin === true) {
+    prompt ("What kind of sandwich would you like");
+    var foodPrompt = "sandwich";
+    altert (welcomePrompt + "please wait 10 min for your " + foodPrompt);
+
+} 
+
+else {
+    prompt ("if you dont want a sandwich what are you here for !");
+}
