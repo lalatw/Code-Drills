@@ -13,8 +13,19 @@
     function unique(str) {
     // ====================== YOUR WORK HERE ===================
 
+      var value= [];
+      for (i=0; i<str.length; i++) {
+        if ((value.indexOf(str.charAt(i)))===-1) {
+          value.push(str.charAt(i));
+        }  
 
+        else {
+          return false;
+        }
+        
+      }
 
+      return true;
 
 
     // =========================================================

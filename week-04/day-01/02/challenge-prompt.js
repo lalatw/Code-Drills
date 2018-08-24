@@ -37,8 +37,11 @@ $(function() {
   //
   // -------------------- Your Code Here --------------------
 
+  buttonColors = localStorage.getItem("buttonColors");
 
-  
+  if (buttonColors ==="") {
+    buttonColors = "111111111111";
+  }
 
   // --------------------- End Code Area --------------------
   
@@ -55,14 +58,23 @@ $(function() {
     // `index` variable
     var index = parseInt($(this).data("button"));
 
-
     // Your code here should change the buttonColors string to reflect the change 
     // in color from the user click. You will have to use the `replaceChar` function
     // defined above. After you've updated button colors, store it inside local storage.
     //
     // -------------------- Your Code Here --------------------
 
+    var newColor = localStorage.getItem("buttonColors").charAt(index);
 
+    if ( newColor== "1") {
+      buttonColors = replaceChar(buttonColors, index, "0") ;
+      localStorage.setItem("buttonColors", buttonColors);
+    }
+
+    else {
+      buttonColors = replaceChar(buttonColors, index, "1") ;
+      localStorage.setItem("buttonColors", buttonColors);
+    }
 
 
     // --------------------- End Code Area --------------------
