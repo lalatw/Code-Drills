@@ -12,9 +12,17 @@
 function reverse(str) {
   // -------------------- Your Code Here --------------------
 
+  var strSplit= str.split(" ");
 
+  var newStr = "";
 
+  for (var i=strSplit.length-1; i>=0; i--) {
+    console.log(strSplit[i]);
+    newStr = newStr.concat(strSplit[i], " ");
+  }
 
+   
+  return newStr;
 
 
   // --------------------- End Code Area --------------------
